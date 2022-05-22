@@ -1,8 +1,36 @@
 package com.bridgelabz.largestnumber;
 
+import java.util.Scanner;
+
 public class LargestNumbers {
+
     public static void main(String[] args) {
 
-        System.out.println("Welcome to Largest Among Three Numbers");
+        int x, y, z;
+
+        // Getting three integer values from user
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the first number:");
+        x = s.nextInt();
+        System.out.print("Enter the second number:");
+        y = s.nextInt();
+        System.out.print("Enter the third number:");
+        z = s.nextInt();
+
+        if(x > y && x > z)
+        {
+            System.out.println("The largest number is: "+x);
+        }
+        else if(y > z)
+        {
+            System.out.println("The largest number is: "+y);
+        }
+        else
+        {
+            System.out.println("The largest number is: "+z);
+        }
+
     }
 }
+
+
